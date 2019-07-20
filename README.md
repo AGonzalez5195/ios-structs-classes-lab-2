@@ -12,7 +12,7 @@ struct Room {
      let width: Double
 }
 ```
-```
+```swift
 struct Room {
 let maxOccupancy: Int
 var length: Double
@@ -42,7 +42,7 @@ class Bike {
 }
 ```
 
-```
+```swift
 class Bike {
 var wheelNumber = 2
 var hasBell = false
@@ -75,7 +75,7 @@ class Animal {
 
 b. Override the printDescription method to have the instance of the Bird object print out its name and whether it can fly
 
-```
+```swift
 class Animal {
 var name: String = ""
 func printDescription() {
@@ -127,7 +127,7 @@ a. Create a `LoudBike` subclass of Bike.  When you call `ringBell` it should rin
 
 b. Give `LoudBike` a new method called `ringBell(times:)` that rings the bell a given number of times
 
-```
+```swift
 class Bike {
 let wheelNumber = 2
 let wheelWidth = 1.3
@@ -178,7 +178,7 @@ d. Create a class `Rectangle` that subclasses from `Shape`.  Give it a `width` p
 
 e. Override the `name` property of `Rectangle` so that it returns a String containing its name ("Rectangle") and its area and perimeter.
 
-```
+```swift
 class Shape {
 var name: String { return "This is a generic shape" }
 var area: Double { fatalError("Subclasses must override the area") }
@@ -307,7 +307,7 @@ circleOne.contains(pointFour) //true
 ```
 
 c. Add another method to `Circle` that returns a random point on the circle
-```
+```swift
 struct Circle {
 let radius: Double
 let center: Point
@@ -354,7 +354,7 @@ model.playerWon //true
 
 c. Add a method called `printDisplayVersionOfWord` that prints the `targetWord` replacing characters that are not in `guessedLetters` with "\_"
 
-```
+```swift
 var model = HangmanModel()
 model.targetWord = "hello"
 model.guessedLetters = ["h","l"]
